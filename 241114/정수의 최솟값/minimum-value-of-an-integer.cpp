@@ -2,31 +2,14 @@
 using namespace std;
 
 int Small(int a, int b, int c){
-    if(a>b&&a>c){
-        if(b>c){
-            cout<<c;
-        }
-        if(b<c){
-            cout<<b;
-        }
+        int min = a;
+    if (min > b) {
+        min = b;
     }
-    if(b>a&&b>c){
-        if(a>c){
-            cout<<c;
-        }
-        if(a<c){
-            cout<<a;
-        }
+    if (min > c) {
+        min = c;
     }
-    if(c>a&&c>b){
-        if(a>b){
-            cout<<b;
-        }
-        if(a<b){
-            cout<<a;
-        }
-    }
-    return 0;
+    return min;
 }
 
 int main() {
