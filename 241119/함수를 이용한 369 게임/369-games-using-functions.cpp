@@ -7,6 +7,7 @@ bool JudgeNum(int m) {
             return true;
         m = m / 10;
     }
+    return false;
 }
 
 bool FindNum(int n) {
