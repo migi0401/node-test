@@ -2,7 +2,7 @@
 using namespace std;
 
 bool FindNum(int n) {
-    for (int i = 2; i <= n; i++) {
+    for (int i = 2; i < n; i++) {
         if (n % i == 0)
             return false;
     }
@@ -13,7 +13,7 @@ int main() {
     int num = 0;;
     int a, b;
     cin >> a >> b;
-    for (int i = a; i < b; i++) {
+    for (int i = a; i <= b; i++) {
         if (FindNum(i)) {
             num = num + i;
         }
